@@ -35,12 +35,20 @@ function App() {
 
     <div>
       <label>Weight:</label>
-      <input type="number" value={weight} onChange={e => setWeight(e.target.value)}/><br></br>
+      <input type="number" value={weight} onChange={e => setWeight(e.target.value)}/>
+      <br></br>
       </div>
 
       <div>
       <label>Bottles:</label>
-      <input type="number" value={bottles} onChange={e => setBottles(e.target.value)}></input><br></br>
+      <select name="bottles" value={bottles} onChange={e => setBottles(e.target.value)}>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      
       </div>
 
       <div>
